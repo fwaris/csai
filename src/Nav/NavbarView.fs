@@ -5,6 +5,15 @@ open Fable.Helpers.React.Props
 open Fulma
 open App.Types
 
+let private menuLink dispatch href name =
+    Navbar.Item.a 
+        [ Navbar.Item.Props 
+            [ OnClick (fun _ -> dispatch CloseBurger)
+              ClassName "navbar-item"
+              Href href]]
+        [str name]
+    
+
 let root isBurgerOpen dispatch =
   div []
     [ Container.container []
@@ -16,7 +25,8 @@ let root isBurgerOpen dispatch =
                     [ str "Comp. Sci. AI"]
                   Navbar.Item.a [Navbar.Item.Props [Href "http://engineering.wayne.edu/"]]
                     [ span[][str "[College"; em [] [str " of "]; str "Engineering]"]]
-                  Navbar.burger [ Fulma.Common.CustomClass (if isBurgerOpen then "is-active" else "")
+                  Navbar.burger [ Fulma.Common.CustomClass "is-hidden-tablet"
+                                  Fulma.Common.CustomClass (if isBurgerOpen then "is-active" else "")
                                   Fulma.Common.Props [OnClick (fun _ -> dispatch ToggleBurger)]
                                 ]
                     [   span[][]
@@ -29,16 +39,16 @@ let root isBurgerOpen dispatch =
                     [ Navbar.Item.div [Navbar.Item.HasDropdown; Navbar.Item.IsHoverable ]
                         [   a [ ClassName "navbar-link is-active"; Href "#home"][str "Menu"]
                             Navbar.Dropdown.div []
-                                [
-                                    a [ClassName "navbar-item"; Href "#home"][str"Home"]
-                                    a [ClassName "navbar-item"; Href "#about"][str"About Me"]
-                                    a [ClassName "navbar-item"; Href "#research"][str"Research"]
-                                    a [ClassName "navbar-item"; Href "#publications_-1"][str"Publications"]
-                                    a [ClassName "navbar-item"; Href "#dissertations"][str"Dissertations"]
-                                    a [ClassName "navbar-item"; Href "#researchprojects"][str"Projects"]
-                                    a [ClassName "navbar-item"; Href "#teaching"][str"Teaching"]
-                                    a [ClassName "navbar-item"; Href "#contact"][str"Contact"]
+                                ([
+                                    "#about"            , "About Me"
+                                    "#research"         , "Research"
+                                    "#publications_-1"  , "Publications"
+                                    "#dissertations"    , "Dissertations"
+                                    "#researchprojects" , "Projects"
+                                    "#teaching"         , "Teaching"
+                                    "#contact"          , "Contact"
                                 ]
+                                |> List.map(fun (h,n) -> menuLink dispatch h n))
                         ]
                     ]
                 ]

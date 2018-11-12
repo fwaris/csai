@@ -29,6 +29,7 @@ type Msg =
     | GotDissertations of Contents
     | GotProjects of Contents
     | ToggleBurger
+    | CloseBurger
     | AppEx of exn
 
 type Model = {

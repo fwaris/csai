@@ -66,4 +66,5 @@ let update msg model : Model*Cmd<Msg> =
     | GotDissertations cntnt -> {model with Dissertations=cntnt},Cmd.none
     | GotProjects cntnt -> {model with Projects=cntnt},Cmd.none
     | ToggleBurger      -> {model with IsBurgerOpen = not model.IsBurgerOpen},Cmd.none
+    | CloseBurger       -> {model with IsBurgerOpen=false},Cmd.none
     | AppEx e -> console.log(e.Message); model,Cmd.none
