@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Global\**" />
+    <EmbeddedResource Remove="Import\**" />
+    <EmbeddedResource Remove="Question\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Types.fs" />
+    <Compile Include="RenderHelp.fs" />
+    <Compile Include="Pages\AboutView.fs" />
+    <Compile Include="Pages\HomeView.fs" />
+    <Compile Include="Pages\ResearchView.fs" />
+    <Compile Include="Pages\PublicationsView.fs" />
+    <Compile Include="Pages\DissertationsView.fs" />
+    <Compile Include="Pages\ProjectsView.fs" />
+    <Compile Include="Pages\TeachingView.fs" />
+    <Compile Include="Pages\ContactView.fs" />
+    <Compile Include="Nav\NavbarView.fs" />
+    <Compile Include="State.fs" />
+    <Compile Include="App.fs" />
+  </ItemGroup>
+  <Import Project="..\.paket\Paket.Restore.targets" />
+</Project>

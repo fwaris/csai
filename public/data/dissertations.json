@@ -1,0 +1,84 @@
+{
+    "Contents": [
+        {
+            "Title": "Ph.D. Theses Directed",
+            "Contents": {
+                "Items": [
+                    [ "Bin Peng, Knowledge Swarms in\n Cultural Algorithms for Dynamic Environments, at Wayne State University, in\n progress." ],
+                    [ "Ziad Kobti , Learning in Dynamic Hierarchical Network\n Structures in Complex Systems, at Wayne State University, Fall, 2004." ],
+                    [ "Sean Che ,\n Evolution of Decision Systems, at Wayne State University, in progress." ],
+                    [ "Alina Lazar, The Impact of Heuristic\n Knowledge Discovery Techniques on the Multi-Agent Simulation of Cultural\n Evolution, at Wayne State University, Winter 2002." ],
+                    [ "David Ostrowski ,\n \"Using Cultural Algorithms to Evolve Strategies\n in \n Agent Based Models\", at Wayne State University, Winter 2002." ],
+                    [ "Nestor Rychtyckyj ,\n \"Using Cultural Algorithms to Re-Engineer\n Semantic \n Networks\", at Wayne State University, Winter, 2001." ],
+                    [ "Saleh Saleem ,\n Knowledge-Based Solutions to Dynamic Problems Using Cultural Algorithms, at\n Wayne State University, Winter, 2001." ],
+                    [ "Xidong Jin , Solving Constrained Optimization Problems\n Using Cultural Algorithms and Regional Schemata, at Wayne State University,\n Winter 2001." ],
+                    [ "George Cowan, \"An Evolutionary\n Computational Approach to the Software Engineering of Evolving\n Programs\", at Wayne State University, Fall , 1999." ],
+                    [ "Shinin Zhu, Fuzzy Algorithms with Evolutionary Programming for Real-Valued Function\n Optimization, at Wayne State University, Fall, 1998." ],
+                    [ "Hassan\n Al- Shehri , \"Evolution-Based Decision-Tree\n Optimization Using Cultural Algorithms \",\n at Wayne State University, Spring, 1997." ],
+                    [ "Chan Jin Chung, \"Knowledge-Based Approaches to Self-Adaptation in Cultural\n Algorithms\", at Wayne State University, Winter 1997." ],
+                    [ "Ayman Nazzal ,\n \"Learning Site-Settlement Patterns From Large Spatio -Temporal\n Databases With Cultural Algorithms\", at Wayne State University, Winter,\n 1997." ],
+                    [ "Elena Zannoni ,\n \"Cultural Algorithms with Genetic Programming: Learning to Control\n the Program Evolution Process\", at Wayne State University, Fall, 1996." ],
+                    [ "Michael Cavaretta ,\n \"Cultural Algorithms and Real-Valued Function\n Optimization\", at Wayne State University, Fall, 1995\n ." ],
+                    [ "Jonathan Maletic ,\n \"The Software Service Bay: A Methodology for Knowledge-Based Software\n Maintenance\", at Wayne State University, Fall, 1995." ]
+                ]
+            }
+        },
+        {
+            "Title": "Ph.D. Committee Member",
+            "Contents": {
+                "Items": [
+                    [ "Robert J. Calin-Jageman ,\n Dept. of Psychology, Neural Basis of Environmental Regulation of the Aplysia Siphon-Withdrawal Reflex, at Wayne State\n University, Summer, 2004." ],
+                    [ "Jeffrey Pfaffman ,\n Microtubule Learning Models, at Wayne State University, 2003." ],
+                    [ "Jon Brewster, Area: Biological\n Information Processing, Wayne State, 2002." ],
+                    [ "George Schliess ,\n Area: Learning in Artificial Neural Networks, Wayne State University, 2002." ],
+                    [ "Jose Juarez- Seqovia ,\n Area: Biological Information Processing, Wayne State University, 2001." ],
+                    [ "Nicholas\n Gessler, Artificial Cultures, University of California, Los Angeles, 2000." ],
+                    [ "Ahmet Ugur , Area: Artificial Neural Network Learning,\n Wayne State University, 1998." ],
+                    [ "Pierre Wijkmann ,\n Area: Evolutionary Computation, University of Stockholm, Sweden, 1997" ]
+                ]
+            }
+        },
+        {
+            "Title": "Masters Thesis Directed",
+            "Contents": {
+                "Items": [
+                    [ "Dawit Yifter , Agent-Based Models of Early Cultural\n Evolution, at Wayne State University, in progress." ],
+                    [ "Nooshi Zadegan , Decision-Making and the Evolution of\n Language, at Wayne State University, in progress." ],
+                    [ "Benjamin Carnes, Embedding\n Intelligence in 3D Games: A Day in the Life of the Anazazi ,\n in progress." ],
+                    [ "Benjamin Carnes, Embedding\n Intelligence in 3D Games: A Day in the Life of the Anazazi ,\n in progress." ],
+                    [ "Howard Scheer , Agent-Based Modeling of Pre-Hominid\n Decision-Making, at Wayne State University, Summer, 2004." ],
+                    [ "Ndella Dioum , Agent-Based Models of Cultural Evolution,\n at Wayne State, Winter 2004." ],
+                    [ "Soonwon Kim, Data Mining of Agent Rules\n for a Large-Scale Multi-Agent System, at Wayne State University, Fall, 2002." ],
+                    [ "Jeff Stefan, Optimal Path Search\n Using Cultural Algorithms, at Wayne State University, Fall, 2002." ],
+                    [ "Radu Iacoban ,\n The Synergy of the Knowledge factors of the Cultural Algorithm When Applied\n to Static and Dynamic Environments, at Wayne State University, Fall, 2002." ],
+                    [ "Steve Goodhall ,\n Multi-Agent Simulation of Hunter-Gatherer Behavior, at Wayne State\n University, Fall, 2002." ],
+                    [ "Ronald Isles, Reasoning About\n Genetic Programs Function and Structure Using Cultural Algorithms, at Wayne\n State University, Fall, 2000." ],
+                    [ "Eva Kala, \"\n Representation Shifts and Hierarchical Search in the Royal Road\n Problem Using Cultural Algorithms\", at Wayne State University, Fall,\n 1999." ],
+                    [ ".Michael Sternberg, \"Using\n Cultural Algorithms to Support the Re-Engineering of Rule-Based Expert\n Systems in Dynamic Performance Environments: A Fraud Detection\n Example\", Winter, 1997." ],
+                    [ "William\n Mosley, \"Learning Concepts and Solving the Royal Road Problem Using\n Cultural Algorithms\", at Wayne State University, Winter, 1995." ]
+                ]
+            }
+        },
+        {
+            "Title": "Masters of Arts Essays Directed",
+            "Contents": {
+                "Items": [
+                    [ "Il-Ryun Pak, \"Evolutionary\n Computation Paradigms: A Survey\", at Wayne State University, Winter,\n 1995." ]
+                ]
+            }
+        },
+        {
+            "Title": "Masters of Arts Directed",
+            "Contents": {
+                "Items": [
+                    [ "Anuradha Subramanian, Artificial Intelligence at Wayne State, Fall, 2004." ],
+                    [ "Vijaya Goli , Artificial Intelligence, at Wayne State\n University, Fall, 2000." ],
+                    [ "Christine Pearce, Artificial\n Intelligence, at Wayne State University, Winter, 1997." ],
+                    [ "Jim Ganas ,\n Artificial Intelligence, at Wayne State University, Fall, 1996." ],
+                    [ "Melvin K. Sanny ,\n Artificial Intelligence, at Wayne State University, Fall, 1996." ],
+                    [ "Tony Saketos ,\n Artificial Intelligence, at Wayne State University, Fall, 1996." ]
+                ]
+            }
+        }
+    ]
+}
