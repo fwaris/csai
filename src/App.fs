@@ -26,7 +26,7 @@ let menu currentPage =
       ul
         [ ClassName "menu-list" ]
         [ menuItem "Home" Home currentPage
-          menuItem "About" Page.About currentPage 
+          menuItem "About Me" Page.About currentPage 
           menuItem "Research Area" Research currentPage
           menuItem "Publications" (Publications -1) currentPage
           menuItem "Dissertations" Dissertations currentPage
@@ -57,9 +57,9 @@ let root model dispatch =
         [ div
             [ ClassName "container" ]
             [ div
-                [ ClassName "columns s-three-quarters-mobile" ]
+                [ ClassName "columns"  ]
                 [ div
-                    [ ClassName "column is-3 " ]
+                    [ ClassName "column is-3 is-hidden-mobile" ]
                     [ menu model.currentPage ]
                   div
                     [ ClassName "column" ]

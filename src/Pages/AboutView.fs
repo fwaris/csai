@@ -6,7 +6,7 @@ open Fable.Helpers.React.Props
 let root =
   div
     [ ClassName "content" ]
-    [ h1 [] [str "About me"]
+    [ h1 [] [str "About Me"]
       div [ClassName "card"]
         [
           div [ClassName "card-header-title"] [str "Robert G Reynolds"]

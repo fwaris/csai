@@ -5,8 +5,6 @@ open Fable.Core.JsInterop
 open Fable.Helpers.React
 open Fable.Helpers.React.Props
 
-//<a class="twitter-timeline" href="https://twitter.com/waynestate?ref_src=twsrc%5Etfw">Tweets by waynestate</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-
 let root =
     div [ClassName "content is-fluid"]
         [
@@ -64,19 +62,6 @@ let root =
                                 ]
 
                         ]
-                ]
-
-            div [ClassName "content"]
-                [
-                    a
-                        [
-                            ClassName "twitter-timeline"
-                            Href "https://twitter.com/waynestate?ref_src=twsrc%5Etfw"
-                            Data ("width","300")
-                            Data ("height","400")
-                        ]
-                        [str "Tweets by waynestate"]
-                    script [Async true; Src "https://platform.twitter.com/widgets.js"; CharSet "utf-8"] []       
                 ]
         ]
 
