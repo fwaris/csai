@@ -3,10 +3,11 @@
 Fable, Elmish, React
 
 # Build for production
+(replace fake.sh with fake.cmd on windows)
 
-Run: `./fake.sh build`
+Run: `./fake.sh build` 
 
-All the files needed for deployment are under the `output` folder.
+All the files needed for deployment are under the `deploy` folder.
 
 # Watch mode
 

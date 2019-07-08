@@ -1,0 +1,40 @@
+{
+    "Contents": [
+        {
+            "Title": "Research in Progress, Not Yet Funded.",
+            "Contents": {
+                "Items": [
+                    [ "2005, National Science Foundation, \"Evolving Problem Solving Cultures\", (PI), 3 years, $295,938, submitted May 3, 2005. Not funded." ],
+                    [ "2005, National Science Foundation, \"AOC: Early Cultural Evolution\", (PI, co-PI’s Robert Whallon, and David B. Fogel), 3 years, $711,198, submitted February 23, 2005." ],
+                    [ "2005, Wayne State University, \"Building Partnership Between Wayne State’s Artificial Intelligence Laboratory and the University of Windsor High Speed Computing Institute, (PI, co PI Ziad Kobti), 1 year, $5,000, submitted February 25, 2005. Not funded." ],
+                    [ "2004, National Science Foundation, \"The Effect of Environmental Diversity on the Emergence of Social Complexity in the Valley of Oaxaca, Mexico\", (PI, co-PI’s K. Flannery, and J. Marcus), 5 years, $1,557,865, submitted November 17, 2004. Not funded. " ],
+                    [ "2004, National Science Foundation, \"A Novel Graduate Training and Education Program in Language Engineering\", F. Fotouhi PI, WSU, co-PI with A. Aristar, H. Jamil, and S. Lu, $2,945,221, 5 years, submitted April 29, 2004. Not funded. " ],
+                    [ "2004, National Science Foundation, \"Coordinating Multi-Jurisdictional Disaster response Using Cultural Algorithms: Exploiting Knowledge Swarms to Improve System Resiliency\", (PI, co-PI with S. White, J. Tan, D. Brandenburg, and A. Batteau),  $726,291, 2 years, submitted March 1, 2004. Not funded " ],
+                    [ "2004, National Science Foundation, \"ITR: Collaborative Research: The Language Information Grid\" (F. Fotouhi, PI, Wayne State University, co-PI with: S. Lu, A. Aristar, H. Jamil, D. Grosu, M. Brockmeyer; Univ. of Michigan Dearborn  W. Grosky, N. Patel, Y. Song; Eastern Michigan Univ. H. Aristar; Univ. of Arizona; T. Langandan, S. Farrar; Univ. of California-Fresno, W. Lewis), $3,445,037,. Not funded." ],
+                    [ "2003, National Science Foundation, \"The Effect of Decision-Making on Language Evolution\" (co-PI, PI R. Whallon, University of Michigan), 3 years, $416,908. Not funded. Under revision." ],
+                    [ "2003, NASA, \"Computational Approaches to Modeling Culture and Aerospace Safety\", (co-PI, PI Allen Batteau) pre-proposal submitted, March 28, 2003. Not funded." ],
+                    [ "2003, National Science Foundation, ITR, \"Multiple Agency Jurisdiction Organizational response (MAJOR) Disaster Management\", PI, (co-PI S. White, J. Tan, D. Brandenburg, and A. Batteau) five years, $1,027,800, submitted February 15, 2003. Not funded." ],
+                    [ "2000, National Science Foundation, \"Biocomplexity: An Integrated Approach to Biological and Cultural Adaptation\", (D. Read, PI, UCLA, co-PI with M. Fischer, and J. Johnson, five years, $2,604,920, not funded. " ],
+                    [ "2000, National Science Foundation, \"Biocomplexity Approaches to the Location, Formation, and Dissolution of Neolithic Villages in the Prehispanic U.S. Southwest\", two years, (co-PI, T. Kohler, PI, Washington State University, K. Kolm, and M. Varien co-PI’s), two years, $404,101, not funded." ],
+                    [ "2000, National Science Foundation, \"Intregrated Model for Human Ecodynamics in a Small-scale Agricultural Society \",(co-PI, T. Kohler, PI, Washington State University, K. Kolm, and M. Varien co-PI’s), two years, $130,400. Not funded." ],
+                    [ "2000, National Science Foundation, \"Modeling Pueblo II/III Aggregation and Settlement Changes in Southwest Colorado Incorporating Paleo-hydrology and Changing Agricultural and Economic Strategies\", (co-PI, T. Kohler, PI, Washington State University, K. Kolm, and M. Varien co-PI’s), two years,  $126,706. Not funded." ]
+                ]
+            }
+
+        },
+        {
+            "Title": "Funded Research Last Five Years.",
+            "Contents": {
+                "Items": [
+                    [ "2003-2005, Wayne State University Research Enhancement Program, \"Advanced Technologies for Language Engineering: A Digital Library for Endangered Languages\", (F. Fotouhi, PI, co-PI with S. Lu, and A Aristar), two years, $185,000." ],
+                    [ "2002-2005, National Science Foundation, Biocomplexity,  \"Coupled Human/Social  Systems Over Long Periods: Mesa Verde Region Prehispanic Dynamics\", ( Co-PI with T. Kohler, M.Varien, and K. Kolm),  three years, $920,821." ],
+                    [ "1999-2002, National Science Foundation, Computer and Intelligent Systems Engineering Division, \"Computational Models of State Formation\" (PI, co-PI K. Flannery), three years, $ 294, 441." ],
+                    [ "1996-1997, National Science Foundation, \"Coalition for New Manufacturing  Education: AI Based Learning Tools\", Total Cost, $32,432." ],
+                    [ "1994 - 1995, Ford Motor Company, \"The Development of an Adaptive Knowledge Based Float Glass Scheduler Using Cultural Algorithms\", Total Cost, $25,000" ],
+                    [ "1994 -1995, National Aeronautics and Space Administration, \"The Use of Problem Solving Paradigms in the Stepwise Refinement of Object Oriented Languages (renewal)\", Total Cost, $22,000." ]
+                ]
+            }
+
+        }
+    ]
+}
