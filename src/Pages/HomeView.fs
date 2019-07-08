@@ -8,14 +8,9 @@ open Fable.Helpers.React.Props
 let root =
     div [ClassName "content is-fluid"]
         [
-            div [Style [
-                    CSSProp.Position "absolute"
-                    CSSProp.Right "0"
-                    CSSProp.Top "500"
-                    ]]
-                [
-                    image [Src "img/reynolds_trnsp.png"] []
-                ]               
+            figure [ClassName "is-pulled-right"]
+                     [img [Src "./img/reynolds_trnsp.png"]]
+               
             div [ ClassName "tile is-ancestor is-vertical" ]
                 [
                     div [ClassName "tile is-parent"]
@@ -41,7 +36,7 @@ let root =
                         [
                             div [ClassName "hero-body"]
                                 [
-                                    div [ClassName "title is-4"] [str "Research Interest"]
+                                    div [ClassName "title is-4"] [str "Research Interests"]
 
                                     li [] [a [Href "#research"] [str "Multi-Agent Modeing"]]
                                     li [] [a [Href "#research"] [str "Evolutionary Computation"]]

@@ -19,3 +19,9 @@ Run: `./fake.sh build -t Watch`
 - Install Nuget dependencies: `dotnet restore build.proj`
 - Building for development: `dotnet fable webpack-dev-server`
 - Building for production: `dotnet fable webpack-cli`
+
+# Deploy
+webpages.eng.wayne.edu (ftp)
+copy contents of 'deploy' to /opt/htdocs/ai
+
+

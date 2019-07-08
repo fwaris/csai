@@ -7,9 +7,11 @@ node_modules/
 obj/
 bin/
 output/
+deploy/
 .fake/
 temp/
 .vs/
 .vscode/
+.ionide/
 
 
