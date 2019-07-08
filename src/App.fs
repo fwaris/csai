@@ -15,7 +15,7 @@ let menuItem label page currentPage =
     li
       [ ]
       [ a
-          [ classList [ "is-active", page = currentPage ]
+          [ classList [ "is-active", page = currentPage; "has-text-light", true ]
             Href (toHash page) ]
           [ str label ] ]
 

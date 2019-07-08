@@ -1,28 +1,40 @@
 // Template for webpack.config.js in Fable projects
 // Find latest version in https://github.com/fable-compiler/webpack-config-template
 
-// In most cases, you'll only need to edit the CONFIG object
+// In most cases, you'll only need to edit the CONFIG object (after dependencies)
 // See below if you need better fine-tuning of Webpack options
 
+// Dependencies. Also required: core-js, fable-loader, fable-compiler, @babel/core,
+// @babel/preset-env, babel-loader, sass, sass-loader, css-loader, style-loader, file-loader
+var path = require("path");
+var webpack = require("webpack");
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
+var MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
 var CONFIG = {
-    indexHtmlTemplate: './src/index.html',
-    fsharpEntry: './src/csai.fsproj',
-    cssEntry: './src/scss/main.scss',
-    outputDir: './output',
-    assetsDir: './public',
+    // The tags to include the generated JS and CSS will be automatically injected in the HTML template
+    // See https://github.com/jantimon/html-webpack-plugin
+    RootHtm: "frame.html",
+    indexHtmlTemplate: "./src/frame.html",
+    fsharpEntry: "./src/csai.fsproj",
+    cssEntry: "./sass/main.sass",
+    outputDir: "./deploy",
+    assetsDir: "./public",
     devServerPort: 8080,
     // When using webpack-dev-server, you may need to redirect some calls
     // to a external API server. See https://webpack.js.org/configuration/dev-server/#devserver-proxy
     devServerProxy: undefined,
     // Use babel-preset-env to generate JS compatible with most-used browsers.
-    // More info at https://github.com/babel/babel/blob/master/packages/babel-preset-env/README.md
+    // More info at https://babeljs.io/docs/en/next/babel-preset-env.html
     babel: {
         presets: [
             ["@babel/preset-env", {
+                "targets": "> 0.25%, not dead",
                 "modules": false,
+                // This adds polyfills when needed. Requires core-js dependency.
+                // See https://babeljs.io/docs/en/babel-preset-env#usebuiltins
                 "useBuiltIns": "usage",
-                // This saves around 4KB in minified bundle (not gzipped)
-                // "loose": true,
             }]
         ],
     }
@@ -32,36 +44,28 @@ var CONFIG = {
 var isProduction = !process.argv.find(v => v.indexOf('webpack-dev-server') !== -1);
 console.log("Bundling for " + (isProduction ? "production" : "development") + "...");
 
-var path = require("path");
-var webpack = require("webpack");
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-var CopyWebpackPlugin = require('copy-webpack-plugin');
-var MiniCssExtractPlugin = require("mini-css-extract-plugin");
-
 // The HtmlWebpackPlugin allows us to use a template for the index.html page
 // and automatically injects <script> or <link> tags for generated bundles.
 var commonPlugins = [
     new HtmlWebpackPlugin({
-        filename: 'index.html',
-        template: CONFIG.indexHtmlTemplate
+        filename: "frame.html",
+        template: resolve(CONFIG.indexHtmlTemplate)
     })
 ];
 
 module.exports = {
     // In development, bundle styles together with the code so they can also
     // trigger hot reloads. In production, put them in a separate CSS file.
-
-    // @babel/polyfill is a polyfill. If you only need to support modern browsers, you can remove it.
     entry: isProduction ? {
-        app: ["@babel/polyfill", CONFIG.fsharpEntry, CONFIG.cssEntry]
+        app: [resolve(CONFIG.fsharpEntry), resolve(CONFIG.cssEntry)]
     } : {
-            app: ["@babel/polyfill", CONFIG.fsharpEntry],
-            style: [CONFIG.cssEntry]
+            app: [resolve(CONFIG.fsharpEntry)],
+            style: [resolve(CONFIG.cssEntry)]
         },
     // Add a hash to the output file name in production
     // to prevent browser caching if code changes
     output: {
-        path: path.join(__dirname, CONFIG.outputDir),
+        path: resolve(CONFIG.outputDir),
         filename: isProduction ? '[name].[hash].js' : '[name].js'
     },
     mode: isProduction ? "production" : "development",
@@ -82,13 +86,14 @@ module.exports = {
     // Besides the HtmlPlugin, we use the following plugins:
     // PRODUCTION
     //      - MiniCssExtractPlugin: Extracts CSS from bundle to a different file
+    //          To minify CSS, see https://github.com/webpack-contrib/mini-css-extract-plugin#minimizing-for-production
     //      - CopyWebpackPlugin: Copies static assets to output directory
     // DEVELOPMENT
     //      - HotModuleReplacementPlugin: Enables hot reloading when code changes without refreshing
     plugins: isProduction ?
         commonPlugins.concat([
             new MiniCssExtractPlugin({ filename: 'style.css' }),
-            new CopyWebpackPlugin([{ from: CONFIG.assetsDir }]),
+            new CopyWebpackPlugin([{ from: resolve(CONFIG.assetsDir) }]),
         ])
         : commonPlugins.concat([
             new webpack.HotModuleReplacementPlugin(),
@@ -100,7 +105,7 @@ module.exports = {
     // Configuration for webpack-dev-server
     devServer: {
         publicPath: "/",
-        contentBase: CONFIG.assetsDir,
+        contentBase: resolve(CONFIG.assetsDir),
         port: CONFIG.devServerPort,
         proxy: CONFIG.devServerProxy,
         hot: true,
@@ -136,7 +141,10 @@ module.exports = {
                         ? MiniCssExtractPlugin.loader
                         : 'style-loader',
                     'css-loader',
-                    'sass-loader',
+                    {
+                      loader: 'sass-loader',
+                      options: { implementation: require("sass") }
+                    }
                 ],
             },
             {
@@ -146,3 +154,7 @@ module.exports = {
         ]
     }
 };
+
+function resolve(filePath) {
+    return path.isAbsolute(filePath) ? filePath : path.join(__dirname, filePath);
+}

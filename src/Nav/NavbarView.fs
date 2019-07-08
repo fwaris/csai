@@ -20,11 +20,12 @@ let root isBurgerOpen dispatch =
         [ Navbar.navbar [Navbar.Props [ ClassName "is-transparent"]]
             [ Navbar.Brand.div []
                 [ Navbar.Item.a [Navbar.Item.Props [Href "#home"]]
-                    [ i [ClassName "fa fa-home fa-lg"] []]
-                  Navbar.Item.a [Navbar.Item.Props [Href "#"]]
-                    [ str "Comp. Sci. AI"]
-                  Navbar.Item.a [Navbar.Item.Props [Href "http://engineering.wayne.edu/"]]
-                    [ span[][str "[College"; em [] [str " of "]; str "Engineering]"]]
+                    [ i [ClassName "fa fa-home fa-lg has-text-dark"] []]
+
+                  // Navbar.Item.a [Navbar.Item.Props [Href "#"]]
+                  //   [ str "Comp. Sci. AI"]
+                  // Navbar.Item.a [Navbar.Item.Props [Href "http://engineering.wayne.edu/"]]
+                  //   [ span[][str "[College"; em [] [str " of "]; str "Engineering]"]]
                   Navbar.burger [ Fulma.Common.CustomClass "is-hidden-tablet"
                                   Fulma.Common.CustomClass (if isBurgerOpen then "is-active" else "")
                                   Fulma.Common.Props [OnClick (fun _ -> dispatch ToggleBurger)]

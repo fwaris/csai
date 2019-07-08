@@ -8,26 +8,36 @@ open Fable.Helpers.React.Props
 let root =
     div [ClassName "content is-fluid"]
         [
+            div [Style [
+                    CSSProp.Position "absolute"
+                    CSSProp.Right "0"
+                    CSSProp.Top "500"
+                    ]]
+                [
+                    image [Src "img/reynolds_trnsp.png"] []
+                ]               
             div [ ClassName "tile is-ancestor is-vertical" ]
                 [
                     div [ClassName "tile is-parent"]
                         [
+
                             div [ClassName "tile"]
                                 [
                                     div [ClassName "title is-5"]
                                         [
                                             p[][str "Dr. Robert Reynolds"]
-                                            p[ClassName "subtitle is-6"]
+                                            p[ClassName "subtitle is-8"]
                                                 [
                                                 str "Prof. Computer Science, College of Engineering"
                                                 br[]
                                                 str "Director of Artificial Inteligence lab"
                                                 ]
                                         ]
+                             
                                 ]
                         ]
                     br[]
-                    div [ClassName "hero is-small is-light tile"]
+                    div [ClassName "hero is-small is-dark tile"]
                         [
                             div [ClassName "hero-body"]
                                 [
@@ -39,7 +49,7 @@ let root =
 
                         ]
                     br[]
-                    div [ClassName "hero is-small is-light is-bold tile"]
+                    div [ClassName "hero is-small is-dark tile"]
                         [
                             div [ClassName "hero-body"]
                                 [

@@ -27,7 +27,7 @@ let generateTop (c:Contents) =
                         (cs
                         |> Seq.mapi (fun i  c ->
                             a
-                                [ ClassName "is-primary button"; st; Href (toHash (Publications i))]
+                                [ ClassName " button"; st; Href (toHash (Publications i))]
                                 [str c.Title]) |> Seq.toList)
     | Items is -> div [ClassName "content"] (is |> Seq.map lines |> Seq.toList)
     | Empty    -> div [][]

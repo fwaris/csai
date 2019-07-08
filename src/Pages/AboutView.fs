@@ -10,7 +10,7 @@ let root =
       div [ClassName "card"]
         [
           div [ClassName "card-header-title"] [str "Robert G Reynolds"]
-          div [ClassName "card-content container is-fluid"]
+          div [ClassName "card-content container is-fluid is-dark"]
             [
               figure [ClassName "image is-128x128 notification"]
                      [img [Src "img/reynolds.jpg"]]
